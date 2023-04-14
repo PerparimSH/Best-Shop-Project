@@ -2,179 +2,268 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BestShop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="navigation-wrapper">
-          <div class="logo-holder">
-            <h2>BestShop</h2>
-          </div>
-          <nav class="navigation">
-            <ul class="menu">
-              <li class="nav-link">Home</li>
-              <li class="nav-link">Benefits</li>
-              <li class="nav-link">Prices</li>
-              <li class="nav-link">Contact</li>
-            </ul>
-          </nav>
-        </div>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="logo">BestShop</a>
+        <nav>
+          <ul class="header__nav">
+            <li class="nav__element">
+              <a href="#why-us" class="nav__link">Why us</a>
+            </li>
+            <li class="nav__element">
+              <a href="#benefits" class="nav__link">Benefits</a>
+            </li>
+            <li class="nav__element">
+              <a href="#prices" class="nav__link">Prices</a>
+            </li>
+            <li class="nav__element">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <div class="banner">
-      <img src="./assets/Background.png" width="1400px" alt="" />
-      <h1>Sell more!</h1>
-      <p>Open shop on our platform and increase your sales</p>
-      <br />
-      <button>Open your shop</button>
-    </div>
+    <main>
+      <section class="opening">
+        <div class="opening__content">
+          <h1 class="opening__header">Sell More!</h1>
+          <p class="opening__heading">
+            Open shop on our platform and increase your sales
+          </p>
+          <a href="#" class="btn btn--primary btn--large">Open your shop</a>
+        </div>
+        <img src="assets/Background.png" alt="" class="opening__image" />
+      </section>
 
-    <div class="container">
-      <div class="text">
-        <h1>The most popular sales platform in country</h1>
-      </div>
-      <br />
-      <br />
-      <div class="boxes">
-        <div class="box">
-          <img src="./assets/Person.svg" alt="" class="firstimage" />
-          <h1>100000+</h1>
-          <p>daily entries</p>
-        </div>
-        <div class="box2">
-          <img src="./assets/Eye.svg" alt="" class="secondimage" />
-          <h1>2000000+</h1>
-          <p>seen products every day</p>
-        </div>
-        <div class="box3">
-          <img src="./assets/Catalog.svg" alt="" class="thirdimage" />
-          <h1>10000+</h1>
-          <p>added posts daily</p>
-        </div>
-      </div>
-    </div>
+      <section class="statistics">
+        <div class="container">
+          <h2 class="statistics__title">
+            The most popular sales platform in country
+          </h2>
 
-    <section class="Komplet-BOX">
-      <div class="container">
-        <div class="firstdiv">
-          <div class="firstelement">
-            <div class="text">
-              <h1>Be Always First</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit aut dolor magni hic. Atque delectus, tempora fugit
-                obcaecati, ipsam similique cum et expedita ducimus unde, eaque
-                dolor quod? Non, ea.
+          <div class="statistics__container">
+            <div class="statistics__single">
+              <div class="statistics__circle">
+                <img
+                  src="assets/Person.svg"
+                  alt="person"
+                  class="statistics__img"
+                />
+              </div>
+              <div class="statistics__number">100000+</div>
+              <div class="statistics__description">daily entries</div>
+            </div>
+
+            <div class="statistics__single">
+              <div class="statistics__circle">
+                <img
+                  src="assets/Eye.svg"
+                  alt="person"
+                  class="statistics__img"
+                />
+              </div>
+              <div class="statistics__number">2000000+</div>
+              <div class="statistics__description">
+                seen products<br />every day
+              </div>
+            </div>
+
+            <div class="statistics__single">
+              <div class="statistics__circle">
+                <img
+                  src="assets/Catalog.svg"
+                  alt="person"
+                  class="statistics__img"
+                />
+              </div>
+              <div class="statistics__number">10000+</div>
+              <div class="statistics__description">added posts<br />daily</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits__container container">
+          <div class="benefits__single benefits__single--notebook">
+            <div class="benefits__text">
+              <h2 class="benefits__title">Be always first</h2>
+              <p class="benefits__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
               </p>
             </div>
-            <div class="image">
-              <img src="../Best-Shop/assets/Macbook.png" alt="" />
+            <div class="benefits__image">
+              <img src="assets/Macbook.png" alt="macbook" />
             </div>
           </div>
-        </div>
-      </div>
 
-      <br />
-      <br />
-
-      <div class="container">
-        <div class="firstdivv">
-          <div class="firstelementt">
-            <div class="text">
-              <h1>Your shop iswhere you are!</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit aut dolor magni hic. Atque delectus, tempora fugit
-                obcaecati, ipsam similique cum et expedita ducimus unde, eaque
-                dolor quod? Non, ea.
+          <div class="benefits__single benefits__single--phone">
+            <div class="benefits__text">
+              <h2 class="benefits__title">Your shop is<br />where you are!</h2>
+              <p class="benefits__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
               </p>
             </div>
-            <div class="imagee">
-              <img src="../Best-Shop/assets/iPhone.png" alt="" />
+            <div class="benefits__image">
+              <img src="assets/iPhone.png" alt="iPhone" />
+            </div>
+          </div>
+
+          <div class="benefits__double">
+            <div class="benefits__single benefits__single--solo">
+              <div class="benefits__text">
+                <h2 class="benefits__title">
+                  Your shop is<br />where you are!
+                </h2>
+                <p class="benefits__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits__single benefits__single--image">
+              <img src="assets/Trumpet.png" alt="Trumpet" />
             </div>
           </div>
         </div>
-      </div>
-      <br />
-      <br />
-      <div class="container">
-        <div class="firstdivvv">
-          <div class="firstelementtt">
-            <div class="text">
-              <h1>Your shop iswhere you are!</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit aut dolor magni hic. Atque delectus, tempora fugit
-                obcaecati, ipsam similique cum et expedita ducimus unde, eaque
-                dolor quod? Non, ea.
-              </p>
+      </section>
+
+      <section class="pricing container" id="prices">
+        <h2>Pricing</h2>
+        <div class="pricing__boxes">
+          <div class="pricing__box pricing__box--basic">
+            <div class="pricing__details">
+              <div class="pricing__type">Basic</div>
+              <div class="pricing__price">$0</div>
             </div>
+            <ul class="pricing__items">
+              <li class="pricing__item">100 MB HDD</li>
+              <li class="pricing__item">1 Subdomain</li>
+              <li class="pricing__item">2 E-mails</li>
+              <li class="pricing__item pricing__item--not">
+                Two years license
+              </li>
+              <li class="pricing__item pricing__item--not">Full support</li>
+            </ul>
+            <a href="#" class="btn">Begin</a>
           </div>
-          <br />
-          <div class="fotolast">
-            <div class="fotolast2">
-              <img src="./assets/Trumpet.png" alt="" />
+
+          <div class="pricing__box pricing__box--professional">
+            <div class="pricing__details">
+              <div class="pricing__type">Professional</div>
+              <div class="pricing__price">$25</div>
+              <div class="pricing__limited">Limited offer</div>
             </div>
+            <ul class="pricing__items">
+              <li class="pricing__item">500 MB HDD</li>
+              <li class="pricing__item">2 Subdomain</li>
+              <li class="pricing__item">5 E-mails</li>
+              <li class="pricing__item">One years license</li>
+              <li class="pricing__item pricing__item--not">Full support</li>
+            </ul>
+            <a href="#" class="btn btn--primary">Begin</a>
+          </div>
+
+          <div class="pricing__box pricing__box--premium">
+            <div class="pricing__details">
+              <div class="pricing__type">Premium</div>
+              <div class="pricing__price">$60</div>
+              <div class="pricing__limited">Limited offer</div>
+            </div>
+            <ul class="pricing__items">
+              <li class="pricing__item">2 GB HDD</li>
+              <li class="pricing__item">5 Subdomain</li>
+              <li class="pricing__item">20 E-mails</li>
+              <li class="pricing__item">Two years license</li>
+              <li class="pricing__item">Full support</li>
+            </ul>
+            <a href="#" class="btn">Begin</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="prices">
-      <h1>Pricing</h1>
-      <div class="boxesprices">
-        <div class="basic">
-          <h3>Basic</h3>
-          <h1>$0</h1>
-          <p>100 MB HDD</p>
-          <p>1 Subdomain</p>
-          <p>2 E-mails</p>
-          <p>Two years license</p>
-          <p>Full support</p>
-          <button>Begin</button>
+      <section class="contact container" id="contact">
+        <div class="contact__column">
+          <h2 class="contact__title">Any questions?</h2>
+          <p class="contact__instruction">
+            Leave your email address or contact us!
+          </p>
+          <div class="contact__details">
+            <a href="mailto:info@bestshop.xyz" class="details__item">
+              <img src="assets/Mail%20Icon.svg" alt="mail" />
+              info@bestshop.xyz
+            </a>
+
+            <a href="tel:123456789" class="details__item">
+              <img src="assets/Phone%20Icon.svg" alt="phone" />
+              123 456 789
+            </a>
+          </div>
         </div>
 
-        <div class="proffesional">
-          <h3>Proffesional</h3>
-          <h1>$25</h1>
-          <p>500 MB HDD</p>
-          <p>2 Subdomain</p>
-          <p>25 E-mails</p>
-          <p>One years license</p>
-          <p>Full support</p>
-          <button>Begin</button>
-        </div>
+        <div class="contact__column">
+          <form class="form">
+            <div class="form__field">
+              <label class="form__label" for="name">Name</label>
+              <input type="text" class="form__input name" id="name" />
+            </div>
 
-        <div class="premium">
-          <h3>Premium</h3>
-          <h1>$60</h1>
-          <p>2 GB HDD</p>
-          <p>5 Subdomain</p>
-          <p>20 E-mails</p>
-          <p>Two years license</p>
-          <p>Full support</p>
-          <button>Begin</button>
+            <div class="form__field">
+              <label class="form__label" for="email">E-mail</label>
+              <input type="email" class="form__input email" id="email" />
+            </div>
+
+            <div class="form__consent">
+              <label class="form__checkbox">
+                <input type="checkbox" />
+                <span class="checkbox"></span>
+                <p class="consent__text">
+                  I hereby give consent for my personal data included in my
+                  application to be processed for the purposes of the
+                  recruitment process under the European Parliament's and
+                  Council of the European Union Regulation on the Protection of
+                  Natural Persons as of 27 April 2016, with regard to the
+                  processing of personal data and on the free movement of such
+                  data, and repealing Directive 95/46/EC (Data Protection
+                  Directive)
+                </p>
+              </label>
+            </div>
+            <button type="submit" class="btn btn--primary">Send</button>
+          </form>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__info">
           <a href="#" class="logo">BestShop</a>
-          <span class="footer__copy">© 2019 BestShop LTD, All Rights Reserved</span>
+          <span class="footer__copy"
+            >© 2019 BestShop LTD, All Rights Reserved</span
+          >
         </div>
         <div class="footer__icons">
           <a href="#"><img src="assets/Twitter.svg" alt="twitter" /></a>
